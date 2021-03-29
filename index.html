@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamela Hsu || Fullstack Web Developer</title>
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav>
+        <div class="nav-wrapper grey darken-3">
+          <a href="#!" class="right brand-logo yellow-text text-accent-4">PH</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- sidebar for mobile -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <div class="row home">
+        <div class="col s12">
+            <div class="card grey darken-3">
+                <img class="prof-photo center-align" src="./assets/images/profile-photo.png">
+                    <div class="card-content white-text center-align">
+                        <h2 class="home-header">Hi there, I'm <span class="yellow-text text-accent-4">Pamela Hsu</span></h2>
+                        <h4>I am a full-stack programming student - welcome to my adventure! </h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me section-->
+    <div class="row" id="about">
+        <div class="col s12">
+            <div class="card grey darken-3">
+                <div class="card-content white-text">
+                    <h3 class="aboutHeader yellow-text text-accent-4">About Me</h3>
+                    <p class="flow-text">
+                        Feeling a nagging need for a career change, I decided to pivot my trajectory from the veterinary field (as a technician) to the web developer field. I am currently enrolled in a full-stack bootcamp program through <a href="https://www.trilogyed.com/" target="_blank">Triology Education Services</a> at <a href="https://bootcamp.tlcenter.wustl.edu/" target="_blank">Washington University</a> here in Saint Louis, Missouri.
+                    </p>
+                </br>    
+                    <p class="flow-text">    
+                        I am enjoying learning about this new world of programming and all the opportunities it has to offer. Seeing the interactive world through this different persepctive brings about entirely new levels of thinking and creativity.
+                    </p>
+                </br>
+                    <p class="flow-text">
+                        Feel free to<span class="yellow-text text-accent-4"> take a look around </span>my growing portfolio!
+                    </p>
+                </br>
+                    <p class="flow-text">
+                        When I am not in school or working, I enjoy spending time with my partner and cat, rock climbing, cooking, and baking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section  -->
+    <div class="row" id="projects">
+        <div class="col s12">
+            <div class="card grey darken-3">
+                <div class="card-content white-text">
+                    <h3 class="aboutHeader yellow-text text-accent-4">Projects</h3>
+                </div>
+                <div class="row" id="project-cards">
+                    <!-- project 1 -->
+                    <div class="col s3 offset-s2">
+                        <div class="card card-small hoverable grey darken-3">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/BrewMe.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-lighten-5">Brew Me<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                                <span class="card-title grey-text text-darken-3">Brew Me<i class="material-icons right">close</i></span>
+                                <p><a href="https://p-hsu.github.io/BREW_ME/">Take a look!</a></p>
+                                <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
+                                <a href="https://github.com/p-hsu/BREW_ME.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 2 -->
+                    <div class="col s3">
+                        <div class="card card-small hoverable grey darken-3">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/planner.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-lighten-5">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                                <span class="card-title grey-text text-darken-3">Work Day Scheduler<i class="material-icons right">close</i></span>
+                                <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
+                                <p>Keep track of your work day with this color coded planner.</p>
+                            </br>
+                                <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 3 -->
+                    <div class="col s3">
+                        <div class="card card-small hoverable grey darken-3">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/jsquiz.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-lighten-5">JavaScript Quiz<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                                <span class="card-title grey-text text-darken-3">JavaScript Quiz<i class="material-icons right">close</i></span>
+                                <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
+                                <p>Take a stab at this quiz app and test your JavaScript fundamental knowledge!</p>
+                            </br>
+                                <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/JavaScript/script.js"></script>
+</body>
+</html>
