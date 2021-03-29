@@ -26,15 +26,6 @@ body {
     line-height: 1px;
 }
 
-#project-cards .card {
-    width: 80%;
-}
-
-#projects-cards .card-image .card-content {
-    text-align: center;
-}
-
-
 @media screen and (max-width: 1000px) {
     .prof-photo {
         width: 50%;
