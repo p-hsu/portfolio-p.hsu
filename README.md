@@ -60,11 +60,11 @@ The following lists all functions within this project:
 
 Screenshots of mobile-friendly navigation bar:
 
-![mobile](./assets/images/mobile.png) ![mobile-navbar](./assets/images/mobile-navbar.png)
+![mobile](./assets/images/mobile.png) ![mobile-navbar](./assets/images/mobile-nav.png)
 
 Screenshot of widescreen monitor:
 
-![fullscreen](./assets/images/fillscreen.png)
+![fullscreen](./assets/images/fullscreen.png)
 
 ****
 
