@@ -1,7 +1,5 @@
 # Portfolio
 
-****
-
 ## Project overview
 
 This portfolio showcases recent projects and respective deployment/github links, as well as a peak at a few projects that I am proud of. Different methods of contact are also provided for future work endevors and collaborations.
