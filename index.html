@@ -13,36 +13,41 @@
 </head>
 <body>
 
-    <!-- nav bar -->
-    <div class="navbar-fixed blue-grey darken-3">
-        <nav>
-            <div class="nav-wrapper blue-grey darken-3">
-            <a href="#!" class="right brand-logo yellow-text text-accent-4">PH</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="./assets/PDF/Web Dev resume.pdf" download>Resume</a></li>
-            </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- sidebar for mobile -->
-    <ul class="sidenav" id="mobile-nav">
+    <!-- Navigation Bar -->
+    <ul class="sidenav sidenav-fixed cyan darken-4 hide-on-small-only" id="main-nav">
+        <li id="logo-container">
+            <a href="#" aria-label="Navigate to top of page" class="brand-logo"><img class="circle" id="logo-photo" src="./assets/images/profile-photo-md.png"></a>
+            <p class="logo-text orange-text"></p>
+        </li>  
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="./assets/PDF/Web Dev resume.pdf" download>Resume</a></li>
     </ul>
+    <!-- responsive small screen -->
+    <nav class="hide-on-large-only trigger z-depth-1 cyan darken-4">
+        <a href="#!" class="right brand-logo">
+            <img class="prof-photo center-align" src="./assets/images/profile-photo-sm.png">
+        </a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <!-- sidebar for mobile -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+
+
 
     <div id="home">
         <div class="container">
                 <img class="prof-photo center-align" src="./assets/images/profile-photo.png">
                     <div class="card-content white-text center-align">
-                        <h2 class="home-header">Hi there, I'm <span class="yellow-text text-accent-4">Pamela Hsu</span></h2>
-                        <h4>I am a full-stack programming student - welcome to my adventure! </h4>
+                        <h2 class="home-header">Hi there, I'm <span class="teal-text text-darken-3">Pamela Hsu</span></h2>
+                        <h4 class= "blue-grey-text text-darken-4">I am a full-stack programming student - welcome to my adventure! </h4>
                         <a href="tel:2407518015"><i class="material-icons home-icon">phone</i></a>
                         <a href="https://github.com/p-hsu"><img class="home-icon" src="./assets/images/GitHub-Mark-Light-32px.png"></a>
                         <a href="mailto:pamela.jk.hsu@gmail.com"><i class="material-icons home-icon">mail</i></a>
@@ -52,11 +57,11 @@
     </div>
 
     <!-- About Me section-->
-    <div id="about">
+    <div class= "lime lighten-5" id="about">
         <!-- <div class="container"> -->
-            <div class="card">
-                <div class="card-content white-text">
-                    <h3 class="aboutHeader yellow-text text-accent-4">About Me</h3>
+            <div class="card lime lighten-5">
+                <div class="card-content">
+                    <h3 class="aboutHeader cyan-text text-darken-3">About Me</h3>
                     <p class="flow-text">
                         Feeling a nagging need for a career change, I decided to pivot my trajectory from the veterinary field (as a technician) to the web developer field. I am currently enrolled in a full-stack bootcamp program through <a href="https://www.trilogyed.com/" target="_blank">Triology Education Services</a> at <a href="https://bootcamp.tlcenter.wustl.edu/" target="_blank">Washington University</a> here in Saint Louis, Missouri.
                     </p>
@@ -66,7 +71,7 @@
                     </p>
                 </br>
                     <p class="flow-text">
-                        Feel free to<span class="yellow-text text-accent-4"> take a look around </span>my growing portfolio!
+                        Feel free to<span class="orange-text text-darken-3"> take a look around </span>my growing portfolio!
                     </p>
                 </br>
                     <p class="flow-text">
@@ -78,89 +83,83 @@
     </div>
 
     <!-- Projects section  -->
-    <div class="row" id="projects">
-        <div class="col s12">
-            <div class="card grey darken-3">
-                <div class="card-content white-text">
-                    <h3 class="aboutHeader yellow-text text-accent-4">Projects</h3>
+    <div id="projects">
+        <!-- <div class="col s12"> -->
+        <div class="card cyan lighten-5">
+            <div class="card-content white-text">
+                <h3 class="aboutHeader blue-grey-text text-darken-4">Projects</h3>
+            </div>
+            <div class="card-content row">
+                <!-- project 1 -->
+                <div class="col s12 m4 l4">
+                    <div class="card card-small hoverable pink darken-2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/BrewMe.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-lighten-5">Brew Me<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal yellow accent-4 flow-text">
+                            <span class="card-title">Brew Me<i class="material-icons right">close</i></span>
+                            <p><a href="https://p-hsu.github.io/BREW_ME/">Take a look!</a></p>
+                            <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
+                            <a href="https://github.com/p-hsu/BREW_ME.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-content row">
-                    <!-- project 1 -->
-                    <div class="col s12 m4 l4">
-                        <div class="card card-small hoverable grey darken-3">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./assets/images/BrewMe.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-lighten-5">Brew Me<i class="material-icons right">more_vert</i></span>
-                            </div>
-                            <div class="card-reveal yellow accent-4 flow-text">
-                                <span class="card-title">Brew Me<i class="material-icons right">close</i></span>
-                                <p><a href="https://p-hsu.github.io/BREW_ME/">Take a look!</a></p>
-                                <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
-                                <a href="https://github.com/p-hsu/BREW_ME.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                            </div>
+
+                <!-- project 2 -->
+                <div class="col s12 m4 l4">
+                    <div class="card card-small hoverable pink darken-2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/planner.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-lighten-5">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal yellow accent-4 flow-text">
+                            <span class="card-title">Work Day Scheduler<i class="material-icons right">close</i></span>
+                            <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
+                            <p>Keep track of your work day with this color coded planner.</p>
+                        </br>
+                            <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
                         </div>
                     </div>
+                </div>
 
-                    <!-- project 2 -->
-                    <div class="col s12 m4 l4">
-                        <div class="card card-small hoverable grey darken-3">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./assets/images/planner.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-lighten-5">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
-                            </div>
-                            <div class="card-reveal yellow accent-4 flow-text">
-                                <span class="card-title">Work Day Scheduler<i class="material-icons right">close</i></span>
-                                <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
-                                <p>Keep track of your work day with this color coded planner.</p>
-                            </br>
-                                <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                            </div>
+                <!-- project 3 -->
+                <div class="col s12 m4 l4">
+                    <div class="card card-small hoverable pink darken-2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/README-gen.png">
                         </div>
-                    </div>
-
-                    <!-- project 3 -->
-                    <div class="col s12 m4 l4">
-                        <div class="card card-small hoverable grey darken-3">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./assets/images/README-gen.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-lighten-5">README Generator<i class="material-icons right">more_vert</i></span>
-                            </div>
-                            <div class="card-reveal yellow accent-4 flow-text">
-                                <span class="card-title">README Generator<i class="material-icons right">close</i></span>
-                                <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
-                                <p>A CML prompt generated README template, professional and efficient!</p>
-                            </br>
-                                <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                            </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-lighten-5">README Generator<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal yellow accent-4 flow-text">
+                            <span class="card-title">README Generator<i class="material-icons right">close</i></span>
+                            <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
+                            <p>A CML prompt generated README template, professional and efficient!</p>
+                        </br>
+                            <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
     </div>
 
     <!-- Contact section-->
-    <div class="row" id="contact">
-        <div class="col s12">
+    <div id="contact">
+        <!-- <div class="col s12"> -->
             <div class="card grey darken-3">
                 <div class="card-content">
                     <h4 class="contactHeader yellow-text text-accent-4">Get in touch!</h4>
-                    <div class="card-content white-text row">
-                        <a class="col s3" href="tel:2407518015"><i class="material-icons">phone</i></a>
-                        <a class="col s3" href="https://github.com/p-hsu"><img src="./assets/images/GitHub-Mark-Light-32px.png"></a>
-                        <a class="col s3" href="mailto:pamela.jk.hsu@gmail.com"><i class="material-icons">mail</i></a>
-                        <a class="col s3" href="https://www.linkedin.com/in/pamela-hsu-b46384202/"><img src="assets/images/LI-In-Bug.png"></a>
-                    </div>
                 </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 
     

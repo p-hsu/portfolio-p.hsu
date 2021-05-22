@@ -1,12 +1,28 @@
 
 body {
     font-family: "Ubuntu", serif, sans-serif;
-    background-color: rgb(50, 115, 141);
+    background-color: rgb(212, 116, 5);
 }
 
-.brand-logo {
-    margin-right: 10px;
+#logo-container {
+    width: 180px;
+    height: 290px;
 }
+
+#logo-photo {
+    width:150px;
+    height: 150px;
+    margin-top: 15px;
+}
+
+#main-nav {
+    width: 220px;
+}
+
+#mobile-nav {
+    width: 180px;
+}
+
 
 .home-icon {
     padding: 10px;
@@ -19,16 +35,9 @@ body {
 
 .prof-photo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    height: auto;
-    width: 25%;
-    padding: 20px;
+    /* height: auto; */
+    /* width: 25%; */
 }
- #about > .card{
-     background-color: rgb(25, 43, 65);
- }
 
 .about-card p {
     font-size: 15px;
@@ -37,14 +46,15 @@ body {
 
 @media screen and (max-width: 1000px) {
     .prof-photo {
-        width: 50%;
+        width: 65%;
         height: auto;
+        padding-top: 7px;
     }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .prof-photo {
         width: 80%;
         height: auto;
     }
-}
+} */
