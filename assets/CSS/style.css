@@ -13,7 +13,7 @@ ul.sidenav {
     min-height: 240px;
     padding: 30px 25px 40px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgb(207, 233, 241);
+    border-bottom: 1.5px solid rgb(207, 233, 241);
     background-color: rgb(253, 251, 243);
 }
 
@@ -61,13 +61,13 @@ ul#mobile-nav li {
 
 main {
     padding-left: 200px;
-    background-color: rgb(252, 252, 252);
 }
 
 .section {
     padding-top:0;
     padding-bottom: 30px;
     position: relative;
+    background-color: rgb(252, 252, 252);
 }
 
 .container {
@@ -84,7 +84,7 @@ main {
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
     top: 0;
@@ -144,7 +144,9 @@ section#projects div.card.hoverable {
 }
 
 section#projects div.card-reveal {
-    background-color: rgb(252, 252, 252);
+    /* background-color: rgb(252, 252, 252); */
+    background-color: rgb(253, 251, 243);
+
     z-index: 1;
 }
 
