@@ -41,12 +41,22 @@ ul.sidenav li#logo-container a {
     display: block;
 }
 
+ul.sidenav li i {
+    margin: 0 5px 0 0;
+    position: relative;
+    height: 24px;
+}
+
 nav a.sidenav-trigger i.material-icons {
     font-size: 36px;
     height: 34px;
     position: relative;
     bottom: 15px;
     
+}
+
+ul#mobile-nav li {
+    margin: 20px 0;
 }
 
 main {
@@ -109,7 +119,14 @@ h3 {
 p {
     font-family: "Jost", serif, sans-serifl;
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+section#about blockquote {
+    border-left: 5px solid #b3e5fc;
+    color: #37474f;
+    line-height: 15px;
+    margin: 25px 40px;
 }
 
 section#about span.light-blue {
@@ -117,8 +134,12 @@ section#about span.light-blue {
     padding-right: 5px;
 }
 
+section#projects div.col.s12.m6.l4 {
+    margin-top: 25px;
+}
+
 section#projects div.card.hoverable {
-    background-color: rgb(253, 251, 243);
+    background-color: rgb(252, 252, 252);
 }
 
 section#projects div.card-reveal {
@@ -140,11 +161,24 @@ section#projects div.card-action a.btn-floating {
     margin-right: 15px;
 }
 
+h6 {
+    margin: 25px;
+    line-height: 25px;
+}
+
+section#contact a {
+    margin: 10px 25px;
+}
+
 @media screen and (max-width: 1000px) {
     .prof-photo {
         width: 65%;
         height: auto;
         padding-top: 7px;
+    }
+
+    p {
+        font-size: 20px;
     }
 
     main {
@@ -162,5 +196,42 @@ section#projects div.card-action a.btn-floating {
         margin-left: 15px;
         top: 15px;
         height: 34px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prof-photo {
+        width: 65%;
+        height: auto;
+        padding-top: 3px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    main {
+        padding-left: 0;
+        padding-top: 56px;
+    }
+
+    nav.hide-on-large-only.trigger {
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    nav a.sidenav-trigger {
+        margin-left: 15px;
+        top: 15apx;
+        height: 27px;
+    }
+
+    h5 {
+        font-size: 1.9rem;
+    }
+
+    h6 {
+        font-size: 1.3rem;
     }
 }

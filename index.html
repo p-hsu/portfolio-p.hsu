@@ -24,25 +24,25 @@
                 </h4>
             </a>
         </li>  
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="./assets/PDF/Web Dev resume.pdf" download>Resume</a></li>
+        <li><a aria-label="Navigate to About Me section" href="#about"><i class="fas fa-user-circle fa-lg"></i>About Me</a></li>
+        <li><a aria-label="Navigate to Projects section" href="#projects"><i class="fas fa-project-diagram fa-sm"></i>Projects</a></li>
+        <li><a aria-label="Navigate to Contact section" href="#contact"><i class="fas fa-paper-plane fa-lg"></i>Contact</a></li>
+        <li><a aria-label="Navigate to resume PDF download" href="./assets/PDF/Web Dev resume.pdf" download><i class="fas fa-file-download fa-lg"></i>Resume</a></li>
     </ul>
 
     <!-- Responsive Navigation Bar -->
     <nav class="hide-on-large-only trigger z-depth-1 white">
-        <a href="#home" aria-label="Navigate to top of page" class="center brand-logo">
+        <a aria-label="Navigate to top of page" href="#home" class="center brand-logo">
             <img class="prof-photo center-align" src="./assets/images/profile-photo-sm.png">
         </a>
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger teal darken-1"><i class="material-icons">menu</i></a>
+        <a href="#home" data-target="mobile-nav" class="sidenav-trigger teal darken-1"><i class="material-icons">menu</i></a>
     </nav>
     <!-- Responsive Navigation Bar Slide-out -->
     <ul class="sidenav" id="mobile-nav">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a aria-label="Navigate to About Me section" href="#about"><i class="fas fa-user-circle fa-lg"></i>About Me</a></li>
+        <li><a aria-label="Navigate to Projects section" href="#projects"><i class="fas fa-project-diagram fa-sm"></i>Projects</a></li>
+        <li><a aria-label="Navigate to Contacts section" href="#contact"><i class="fas fa-paper-plane fa-lg"></i>Contact</a></li>
+        <li><a aria-label="Navigate to resume PDR download" href="resume.html"><i class="fas fa-file-download fa-lg"></i>Resume</a></li>
     </ul>
 
 
@@ -54,35 +54,73 @@
             </div>
         </section>
 
-
-
-
-
         <!-- About Me section-->
-        <section id="about" class="section scrollspy">
+        <section id="about" class="sections scrollspy">
             <h3 class="blue-grey-text text-darken-3 light-blue lighten-4">ABOUT ME</h3>
-            <div class="container flow-text">
+            <div class="container">
                 <p>
                     Feeling a nagging need for a career change, I decided to take a <span class="light-blue-text text-lighten-1">180˚</span> pivot from veterinary medicine to the web developer field. I am currently enrolled in a full-stack bootcamp program through <a class="teal-text text-darken-1" href="https://www.trilogyed.com/" aria-label="link to Triology Education Services">Triology Education Services</a> at <a class="teal-text text-darken-1" href="https://bootcamp.tlcenter.wustl.edu/" aria-label="Link to Washington University Saint Louis Bootcamp Program">Washington University</a> here in Saint Louis, Missouri.
                 </p>
                 <p>    
-                    I absorb with facination every new skill learned and every new perspective gained. With discoveries of a passion behind human-centric design and community-driven projects, I look forward to how my creations can bring about real changes in the world. My meticulous attention to detail and organization serves as a wonderful resource for efficient and clean work.
+                    I absorb with facination every new skill learned and every new perspective gained. With discoveries of a passion behind <span class="light-blue-text text-lighten-1">human-centric design</span> and <span class="light-blue-text text-lighten-1">community-driven projects</span>, I look forward to creating that which can bring about real changes in the world. My meticulous attention to detail and organization serves as a reliable resource for efficient and clean work.
                 </p>
-                <p>
-                    Feel free to  <span class="light-blue lighten-4">take a look around</span> my growing portfolio and don't hesitate to contact me!
-                </p>
+                <blockquote>
+                    <h5>Persistence in a ever changing world:</h5>
+                    <h6>I won't forget where I started - but I'm <span class="light-blue lighten-4">far more eager</span> to look at where I want to go.</h6>
+
+                </blockquote>
                 <p>
                     When I am not in school or working, I enjoy spending time with my partner and cat, rock climbing, cooking, and baking.
                 </p>
-
             </div>
         </section>
 
         <!-- Projects section  -->
-        <section id="projects">
+        <section id="projects" class="section scrollspy">
             <h3 class="blue-grey-text text-darken-3 light-blue lighten-4">PROJECTS</h3>
             <div class="container">
                 <div class="row">
+
+                    <!-- wagintagem -->
+                    <div class="col s12 m6 l4">
+                        <div class="card card medium hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/WagginTagem.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator blue-grey-text text-darken-3">Waggin' Tag'em<i class="material-icons right">more_vert</i></span>
+                                <p>A canine "dating" app - find the furry friend you need for you dog!</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title blue-grey-text text-darken-3 underline">Waggin' Tag'em<i class="material-icons right">close</i></span>
+                                <ul>
+                                    <li>Back-end
+                                        <ul>
+                                            <li>Express.js</li>
+                                            <li>Handlebars.js</li>
+                                            <li>Sequelize ORM</li>
+                                        </ul>
+                                    </li>
+                                    <li>Front-end
+                                        <ul>
+                                            <li>CSS Materialize</li>
+                                            <li>Javascript ES+6</li>
+                                        </ul>
+                                    </li>
+                                    <li>Heroku deployment</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-lable="Visit the github repo for ReadMe Generator Project" href="https://github.com/p-hsu/Waggin-tag-em.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View source">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a aria-lable="Visit the github deployed link for Brew Me Project"  href="https://limitless-caverns-66584.herokuapp.com/" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View online">
+                                        <i class="material-icons">launch</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Brew Me-->
                     <div class="col s12 m6 l4">
                         <div class="card card medium hoverable">
@@ -90,14 +128,14 @@
                                 <img class="activator" src="./assets/images/BrewMe.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator teal-text text-darken-2">Brew Me<i class="material-icons right">more_vert</i></span>
+                                <span class="card-title activator blue-grey-text text-darken-3">Brew Me<i class="material-icons right">more_vert</i></span>
                                 <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title blue-grey-text text-darken-3 underline">Brew Me<i class="material-icons right">close</i></span>
                                 <ul>
-                                    <li>Bulma</li>
-                                    <li>Vanilla JavaScript</li>
+                                    <li>CSS Bulma</li>
+                                    <li>Vanilla JavaScript ES6+</li>
                                     <li>API:
                                         <ul>
                                             <li>Open Brewery DB</li>
@@ -106,11 +144,36 @@
                                     </li>
                                 </ul>
                                 <div class="card-action">
-                                    <a aria-lable="Visit the github repo for Brew Me Project" href="https://github.com/p-hsu/BREW_ME.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                                    <a aria-lable="Visit the github repo for Brew Me Project" href="https://github.com/p-hsu/BREW_ME.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View source">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a aria-lable="Visit the github deployed link for Brew Me Project"  href="https://p-hsu.github.io/BREW_ME/" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                                    <a aria-lable="Visit the github deployed link for Brew Me Project"  href="https://p-hsu.github.io/BREW_ME/" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View online">
                                         <i class="material-icons">launch</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- readme-generator -->
+                    <div class="col s12 m6 l4">
+                        <div class="card card medium hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/README-gen.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator blue-grey-text text-darken-3">README Generator<i class="material-icons right">more_vert</i></span>
+                                <p>A CML prompt generated README template, professional and efficient!</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title blue-grey-text text-darken-3 underline">README Generator<i class="material-icons right">close</i></span>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>JavaScript ES6+</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-lable="Visit the github repo for ReadMe Generator Project" href="https://github.com/p-hsu/CML_README_GEN.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View source">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
@@ -124,33 +187,24 @@
                                 <img class="activator" src="./assets/images/planner.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator teal-text text-darken-2"">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
-                            </div>
-                            <div class="card-reveal yellow accent-4 flow-text">
-                                <span class="card-title">Work Day Scheduler<i class="material-icons right">close</i></span>
-                                <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
+                                <span class="card-title activator blue-grey-text text-darken-3">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
                                 <p>Keep track of your work day with this color coded planner.</p>
-                            </br>
-                                <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- readme-generator -->
-                    <div class="col s12 m6 l4">
-                        <div class="card card medium hoverable">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="./assets/images/README-gen.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator teal-text text-darken-2"">README Generator<i class="material-icons right">more_vert</i></span>
-                            </div>
-                            <div class="card-reveal yellow accent-4 flow-text">
-                                <span class="card-title">README Generator<i class="material-icons right">close</i></span>
-                                <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
-                                <p>A CML prompt generated README template, professional and efficient!</p>
-                            </br>
-                                <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            <div class="card-reveal">
+                                <span class="card-title blue-grey-text text-darken-3 underline">Work Day Scheduler<i class="material-icons right">close</i></span>
+                                <ul>
+                                    <li>CSS Bootstrap</li>
+                                    <li>Moment.js</li>
+                                    <li>JQuery</li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-lable="Visit the github repo for Work Day Scheduler Project" href="https://github.com/p-hsu/Day_Planner_9-5.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View source">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a aria-lable="Visit the github deployed link for Work Day Scheduler Project"  href="https://p-hsu.github.io/Day_Planner_9-5/" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1" data-tooltip="View online">
+                                        <i class="material-icons">launch</i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,16 +226,26 @@
                         </div>
             </div>
         </div> -->
-        <div id="contact">
-            <!-- <div class="col s12"> -->
-                <div class="card grey darken-3">
-                    <div class="card-content">
-                        <h4 class="contactHeader yellow-text text-accent-4">Get in touch!</h4>
-                    </div>
-                    </div>
-                </div>
-            <!-- </div> -->
-        </div>
+        <section id="contact" class="section scrollspy">
+            <h3 class="blue-grey-text text-darken-3 light-blue lighten-4">GET IN TOUCH</h3>
+            <div class="container">
+                <h6>Interested in a collaboration, looking for a new hire, or have a question about my work?</h6>
+                <a aria-lable="See Pam's GitHub page" href="https://github.com/p-hsu" target="_blank" data-tooltip="Pam's GitHub" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a aria-lable="Pam's phone number is 2407518015" href="tel:2407518015" target="_blank" data-tooltip="Call Pam" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a aria-lable="See Pam's LinkedIn page" href="https://www.linkedin.com/in/pamela-hsu-b46384202/" target="_blank" data-tooltip="Pam's LinkedIn" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a aria-lable="Email Pam" href="mailto:pamela.jk.hsu@gmail.com" target="_blank" data-tooltip="Email Pam" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+            </section>
+
     </main>
 
     

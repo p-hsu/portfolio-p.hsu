@@ -17,5 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 //   for spyscoll
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.scrollspy');
-    var instances = M.ScrollSpy.init(elems, options);
+    var instances = M.ScrollSpy.init(elems, {
+        throttle: 100,
+        scrollOffset: 200,
+        activeClass: 'active'
+    });
   });
