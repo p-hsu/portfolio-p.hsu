@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Project overview
 
@@ -74,6 +74,12 @@ Screenshot of widescreen monitor:
 Please use the following link to deploy a live URL of this project:
 
 [Pamela Hsu || Fullstack Web Developer](https://p-hsu.github.io/portfolio-p.hsu/)
+
+****
+
+## License
+
+This application is licensed under the MIT license - please refer to the included `LICENSE` file in this repo.
 
 ****
 
