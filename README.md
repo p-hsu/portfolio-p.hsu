@@ -22,6 +22,7 @@ The following components are used to build the code for this project:
 2. **CSS**:
     - Materialize
     - Google Fonts
+    - Font Awesome
     - custom
 3. **JavaScript**:
     - Vanilla JavaScript
@@ -56,7 +57,7 @@ The following lists all functions within this project:
     * `.gitignore` file
 
 
-### Portfolio screenshot
+## Portfolio screenshot
 
 Screenshots of mobile-friendly navigation bar:
 
@@ -80,8 +81,7 @@ Please use the following link to deploy a live URL of this project:
 
 * [Materialize](https://materializecss.com/) documentation for CSS and JavaScript
 * [Google Fonts](https://fonts.google.com/)
-* [GitHub](https://github.com/logos) logo
-* [LinkedIn](https://brand.linkedin.com/downloads) logo
+* [Font Awesome](https://fontawesome.com/)
 * Full-stack Bootcamp Program @ [Washington University, Saint Louis](https://bootcamp.tlcenter.wustl.edu/) through [© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand](https://www.trilogyed.com/)
 
 
