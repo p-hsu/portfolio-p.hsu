@@ -1,3 +1,4 @@
+// For mobile side-nav
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {
@@ -11,4 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         onCloseEnd: null,
         preventScrolling: true
     });
+  });
+
+//   for spyscoll
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, options);
   });

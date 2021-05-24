@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ea44a3d9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
@@ -13,154 +14,175 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <ul class="sidenav sidenav-fixed cyan darken-4 hide-on-small-only" id="main-nav">
+    <!-- Main Navigation Bar -->
+    <ul class="sidenav sidenav-fixed white hide-on-small-only" id="main-nav">
         <li id="logo-container">
-            <a href="#" aria-label="Navigate to top of page" class="brand-logo"><img class="circle" id="logo-photo" src="./assets/images/profile-photo-md.png"></a>
-            <p class="logo-text orange-text"></p>
+            <a href="#home" aria-label="Navigate to top of page" class="brand-logo">
+                <img class="circle" id="logo-photo" src="./assets/images/profile-photo-md.png">
+                <h4 class="blue-grey-text text-darken-2">Pamela Hsu
+                    <span class="teal-text text-darken-2">Fullstack Developer</span>
+                </h4>
+            </a>
         </li>  
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="./assets/PDF/Web Dev resume.pdf" download>Resume</a></li>
     </ul>
-    <!-- responsive small screen -->
-    <nav class="hide-on-large-only trigger z-depth-1 cyan darken-4">
-        <a href="#!" class="right brand-logo">
+
+    <!-- Responsive Navigation Bar -->
+    <nav class="hide-on-large-only trigger z-depth-1 white">
+        <a href="#home" aria-label="Navigate to top of page" class="center brand-logo">
             <img class="prof-photo center-align" src="./assets/images/profile-photo-sm.png">
         </a>
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <!-- sidebar for mobile -->
-        <ul class="sidenav" id="mobile-nav">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger teal darken-1"><i class="material-icons">menu</i></a>
     </nav>
+    <!-- Responsive Navigation Bar Slide-out -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+
+    <main>
+        <section id="home" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2 class="white-text">In pursuit of the <span class="light-blue-text text-lighten-2">magic</span> behind <span class="underline">imperfection</span></h2>
+            </div>
+        </section>
 
 
 
 
-    <div id="home">
-        <div class="container">
-                <img class="prof-photo center-align" src="./assets/images/profile-photo.png">
-                    <div class="card-content white-text center-align">
-                        <h2 class="home-header">Hi there, I'm <span class="teal-text text-darken-3">Pamela Hsu</span></h2>
-                        <h4 class= "blue-grey-text text-darken-4">I am a full-stack programming student - welcome to my adventure! </h4>
-                        <a href="tel:2407518015"><i class="material-icons home-icon">phone</i></a>
-                        <a href="https://github.com/p-hsu"><img class="home-icon" src="./assets/images/GitHub-Mark-Light-32px.png"></a>
-                        <a href="mailto:pamela.jk.hsu@gmail.com"><i class="material-icons home-icon">mail</i></a>
-                        <a href="https://www.linkedin.com/in/pamela-hsu-b46384202/"><img  class="home-icon" src="assets/images/LI-In-Bug.png"></a>
+
+        <!-- About Me section-->
+        <section id="about" class="section scrollspy">
+            <h3 class="blue-grey-text text-darken-3 light-blue lighten-4">ABOUT ME</h3>
+            <div class="container flow-text">
+                <p>
+                    Feeling a nagging need for a career change, I decided to take a <span class="light-blue-text text-lighten-1">180˚</span> pivot from veterinary medicine to the web developer field. I am currently enrolled in a full-stack bootcamp program through <a class="teal-text text-darken-1" href="https://www.trilogyed.com/" aria-label="link to Triology Education Services">Triology Education Services</a> at <a class="teal-text text-darken-1" href="https://bootcamp.tlcenter.wustl.edu/" aria-label="Link to Washington University Saint Louis Bootcamp Program">Washington University</a> here in Saint Louis, Missouri.
+                </p>
+                <p>    
+                    I absorb with facination every new skill learned and every new perspective gained. With discoveries of a passion behind human-centric design and community-driven projects, I look forward to how my creations can bring about real changes in the world. My meticulous attention to detail and organization serves as a wonderful resource for efficient and clean work.
+                </p>
+                <p>
+                    Feel free to  <span class="light-blue lighten-4">take a look around</span> my growing portfolio and don't hesitate to contact me!
+                </p>
+                <p>
+                    When I am not in school or working, I enjoy spending time with my partner and cat, rock climbing, cooking, and baking.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Projects section  -->
+        <section id="projects">
+            <h3 class="blue-grey-text text-darken-3 light-blue lighten-4">PROJECTS</h3>
+            <div class="container">
+                <div class="row">
+                    <!-- Brew Me-->
+                    <div class="col s12 m6 l4">
+                        <div class="card card medium hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/BrewMe.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text text-darken-2">Brew Me<i class="material-icons right">more_vert</i></span>
+                                <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title blue-grey-text text-darken-3 underline">Brew Me<i class="material-icons right">close</i></span>
+                                <ul>
+                                    <li>Bulma</li>
+                                    <li>Vanilla JavaScript</li>
+                                    <li>API:
+                                        <ul>
+                                            <li>Open Brewery DB</li>
+                                            <li>Google Maps Javascript</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-lable="Visit the github repo for Brew Me Project" href="https://github.com/p-hsu/BREW_ME.git" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a aria-lable="Visit the github deployed link for Brew Me Project"  href="https://p-hsu.github.io/BREW_ME/" target="_blank" class="btn-floating btn-large waves waves-effect waves-light teal darken-1">
+                                        <i class="material-icons">launch</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- workday planner -->
+                    <div class="col s12 m6 l4">
+                        <div class="card card medium hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/planner.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text text-darken-2"">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal yellow accent-4 flow-text">
+                                <span class="card-title">Work Day Scheduler<i class="material-icons right">close</i></span>
+                                <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
+                                <p>Keep track of your work day with this color coded planner.</p>
+                            </br>
+                                <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- readme-generator -->
+                    <div class="col s12 m6 l4">
+                        <div class="card card medium hoverable">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./assets/images/README-gen.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text text-darken-2"">README Generator<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal yellow accent-4 flow-text">
+                                <span class="card-title">README Generator<i class="material-icons right">close</i></span>
+                                <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
+                                <p>A CML prompt generated README template, professional and efficient!</p>
+                            </br>
+                                <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section-->
+        <!-- 
+        <div id="home">
+            <div class="container">
+                        <div class="card-content white-text center-align">
+                            <h2 class="home-header">Hi there, I'm <span class="teal-text text-darken-3">Pamela Hsu</span></h2>
+                            <h4 class= "blue-grey-text text-darken-4">I am a full-stack programming student - welcome to my adventure! </h4>
+                            <a href="tel:2407518015"><i class="material-icons home-icon">phone</i></a>
+                            <a href="https://github.com/p-hsu"><img class="home-icon" src="./assets/images/GitHub-Mark-Light-32px.png"></a>
+                            <a href="mailto:pamela.jk.hsu@gmail.com"><i class="material-icons home-icon">mail</i></a>
+                            <a href="https://www.linkedin.com/in/pamela-hsu-b46384202/"><img  class="home-icon" src="assets/images/LI-In-Bug.png"></a>
+                        </div>
+            </div>
+        </div> -->
+        <div id="contact">
+            <!-- <div class="col s12"> -->
+                <div class="card grey darken-3">
+                    <div class="card-content">
+                        <h4 class="contactHeader yellow-text text-accent-4">Get in touch!</h4>
+                    </div>
+                    </div>
+                </div>
+            <!-- </div> -->
         </div>
-    </div>
-
-    <!-- About Me section-->
-    <div class= "lime lighten-5" id="about">
-        <!-- <div class="container"> -->
-            <div class="card lime lighten-5">
-                <div class="card-content">
-                    <h3 class="aboutHeader cyan-text text-darken-3">About Me</h3>
-                    <p class="flow-text">
-                        Feeling a nagging need for a career change, I decided to pivot my trajectory from the veterinary field (as a technician) to the web developer field. I am currently enrolled in a full-stack bootcamp program through <a href="https://www.trilogyed.com/" target="_blank">Triology Education Services</a> at <a href="https://bootcamp.tlcenter.wustl.edu/" target="_blank">Washington University</a> here in Saint Louis, Missouri.
-                    </p>
-                </br>    
-                    <p class="flow-text">    
-                        I am enjoying learning about this new world of programming and all the opportunities it has to offer. Seeing the interactive world through this different persepctive brings about entirely new levels of thinking and creativity.
-                    </p>
-                </br>
-                    <p class="flow-text">
-                        Feel free to<span class="orange-text text-darken-3"> take a look around </span>my growing portfolio!
-                    </p>
-                </br>
-                    <p class="flow-text">
-                        When I am not in school or working, I enjoy spending time with my partner and cat, rock climbing, cooking, and baking.
-                    </p>
-                </div>
-            </div>
-        <!-- </div> -->
-    </div>
-
-    <!-- Projects section  -->
-    <div id="projects">
-        <!-- <div class="col s12"> -->
-        <div class="card cyan lighten-5">
-            <div class="card-content white-text">
-                <h3 class="aboutHeader blue-grey-text text-darken-4">Projects</h3>
-            </div>
-            <div class="card-content row">
-                <!-- project 1 -->
-                <div class="col s12 m4 l4">
-                    <div class="card card-small hoverable pink darken-2">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/BrewMe.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-lighten-5">Brew Me<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal yellow accent-4 flow-text">
-                            <span class="card-title">Brew Me<i class="material-icons right">close</i></span>
-                            <p><a href="https://p-hsu.github.io/BREW_ME/">Take a look!</a></p>
-                            <p>A simple and user-friendly brewery locator for the everyday beer enthusuast.</p>
-                            <a href="https://github.com/p-hsu/BREW_ME.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- project 2 -->
-                <div class="col s12 m4 l4">
-                    <div class="card card-small hoverable pink darken-2">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/planner.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-lighten-5">Work Day Scheduler<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal yellow accent-4 flow-text">
-                            <span class="card-title">Work Day Scheduler<i class="material-icons right">close</i></span>
-                            <p><a href="https://p-hsu.github.io/Day_Planner_9-5/">Take a look!</a></p>
-                            <p>Keep track of your work day with this color coded planner.</p>
-                        </br>
-                            <a href="https://github.com/p-hsu/Day_Planner_9-5.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- project 3 -->
-                <div class="col s12 m4 l4">
-                    <div class="card card-small hoverable pink darken-2">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/README-gen.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-lighten-5">README Generator<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal yellow accent-4 flow-text">
-                            <span class="card-title">README Generator<i class="material-icons right">close</i></span>
-                            <p><a href="https://p-hsu.github.io/JavaScript_Fundamentals_Quiz/">Take a look!</a></p>
-                            <p>A CML prompt generated README template, professional and efficient!</p>
-                        </br>
-                            <a href="https://github.com/p-hsu/JavaScript_Fundamentals_Quiz.git"><img src="./assets/images/GitHub-Mark-32px.png"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- </div> -->
-    </div>
-
-    <!-- Contact section-->
-    <div id="contact">
-        <!-- <div class="col s12"> -->
-            <div class="card grey darken-3">
-                <div class="card-content">
-                    <h4 class="contactHeader yellow-text text-accent-4">Get in touch!</h4>
-                </div>
-                </div>
-            </div>
-        <!-- </div> -->
-    </div>
+    </main>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
