@@ -9,8 +9,8 @@ This portfolio showcases recent projects and respective deployment/github links,
 This application is a work in progress as I add to my repositories and projects as a budding full-stack web developer. Please check back often to see updates and additions.
 
 #### Issues to debug:
-* rendering cards to be same size
-* figuring out Materialize and perhaps exploring another library
+
+None to note at this point in time.
 
 ****
 
